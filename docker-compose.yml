@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  gameoflife:
+    image: gameoflife
+    container_name: gameoflife8
+    ports:
+      - "8090:8080"
+    stdin_open: true
+    tty: true
+    restart: always
+
