@@ -1,14 +1,15 @@
 version: '3.8'
 
 services:
-  gameoflife:
+  nginx:
     build:
       context: .
       dockerfile: Dockerfile
-    image: gameoflife
-    container_name: gameoflife8
+    image: nginx
+    container_name: nginxapp
     ports:
-      - "8090:8080"
+      - "8080:80"
     stdin_open: true
     tty: true
     restart: always
+
