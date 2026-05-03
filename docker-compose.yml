@@ -2,6 +2,9 @@ version: '3.8'
 
 services:
   gameoflife:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: gameoflife
     container_name: gameoflife8
     ports:
@@ -9,4 +12,3 @@ services:
     stdin_open: true
     tty: true
     restart: always
-
