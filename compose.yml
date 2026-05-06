@@ -48,9 +48,5 @@ services:
     networks:
       - wp_net
 
-volumes:
-  db_data:
-  wp_data:
-
 networks:
   wp_net:
